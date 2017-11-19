@@ -3,11 +3,27 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/global.css')
   body
-    .navbar.navbar-default
-    
+    nav.navbar.navbar-expand-lg.navbar-light
+      a.navbar-brand.navbar-left(href='#') K&L Photography
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') About Us
+          li.nav-item
+            a.nav-link(href='#') Portfolio
+          li.nav-item
+            a.nav-link.disabled(href='#') Investment
+
+
     .container
       block content
 
@@ -15,7 +31,7 @@ html
         .row
           .col-xs-12
             small &copy; Simon Holmes 2014
-
     script(src='/javascripts/jquery-3.2.1.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
     script(src='/bootstrap/js/bootstrap.min.js')
-    script(src='https://cdnjs.com/libraries/popper.js')
+  
