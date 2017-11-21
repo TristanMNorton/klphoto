@@ -9,6 +9,7 @@ var ctrlInvestment = require('../controllers/investment')
 router.get('/', ctrlMain.index);
 
 /* GET portfolio pages */
+router.get('/portfolio', ctrlPortfolio)
 router.get('/portfolio/weddings', ctrlPortfolio.weddings);
 router.get('/portfolio/portraits', ctrlPortfolio.portraits);
 router.get('/portfolio/babies', ctrlPortfolio.babies);

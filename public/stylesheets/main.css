@@ -4,14 +4,24 @@
 .container-fluid {
   padding: 0px; }
 
+.navbar {
+  position: absolute; }
+
+.headerSection {
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .headerSection img {
+    width: 100%; }
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px; }
+
 #navbarNav {
   margin-top: -90px; }
   #navbarNav li {
     margin: 0 20px 0 20px;
     font-size: 25px; }
-
-.navbar-toggler {
-  background-image: url("/images/icons/navicon.svg"); }
 
 * {
   font-family: 'EB Garamond', serif; }

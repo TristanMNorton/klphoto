@@ -1,3 +1,7 @@
+module.exports = function(req, res) {
+    res.render('portfolio',  { title: 'Weddings Portfolio' })
+};
+
 module.exports.weddings = function(req, res) {
     res.render('index',  { title: 'Weddings Portfolio' })
 };
