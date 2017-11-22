@@ -10,8 +10,9 @@ router.get('/', ctrlMain.index);
 
 /* GET portfolio pages */
 router.get('/portfolio', ctrlPortfolio)
-router.get('/portfolio/weddings', ctrlPortfolio.weddings);
-router.get('/portfolio/portraits', ctrlPortfolio.portraits);
+router.get('/portfolio/weddings/engagements', ctrlPortfolio.weddingsEngage);
+router.get('/portfolio/weddings/weddings', ctrlPortfolio.weddings);
+router.get('/portfolio/portraits/', ctrlPortfolio.portraits);
 router.get('/portfolio/babies', ctrlPortfolio.babies);
 
 /* GET about pages */
