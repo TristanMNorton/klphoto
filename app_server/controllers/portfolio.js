@@ -22,26 +22,44 @@ module.exports = function(req, res) {
 };
 
 module.exports.weddingsEngage = function(req, res) {
-    res.render('portdisplay',  { di: engagementPhotos });
+    res.render('portdisplay',  { 
+        di: engagementPhotos, 
+        title: 'Engagement Photos' 
+    });
 }; 
 
 module.exports.weddings = function(req, res) {
-    res.render('portdisplay',  { di: weddingsPhotos })
+    res.render('portdisplay',  { 
+        di: weddingsPhotos, 
+        title: 'Wedding Photos' 
+    });
 };
 
 module.exports.portraitsFamily = function(req, res) {
-    res.render('portdisplay',  { di: portFamilyPhotos })
+    res.render('portdisplay',  { 
+        di: portFamilyPhotos, 
+        title: 'Family Portraits' 
+    });
 };
 
 module.exports.portraitsHead = function(req, res) {
-    res.render('portdisplay',  { di: portHeadshotPhotos })
+    res.render('portdisplay',  { 
+        di: portHeadshotPhotos, 
+        title: 'Headshots' 
+    });
 };
 
 module.exports.portraitsSenior = function(req, res) {
-    res.render('portdisplay',  { di: portSeniorPhotos })
+    res.render('portdisplay',  { 
+        di: portSeniorPhotos, 
+        title: 'Senior Portraits' 
+    });
 };
 
 module.exports.babies = function(req, res) {
-    res.render('portdisplay',  { di: babiesPhotos })
+    res.render('portdisplay',  { 
+        di: babiesPhotos, 
+        title: 'Babies First Year' 
+    });
 };
 
