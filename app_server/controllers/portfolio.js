@@ -1,32 +1,47 @@
 var dir = require('node-dir');
 
 // Scanning directories to return image file names to be used in DOM
-var babiesPhotos = dir.files('public/images/portfolio/babiesfirstyear', {sync:true});
-var portFamilyPhotos = dir.files('public/images/portfolio/portraits/familyportraits', {sync:true});
-var portHeadshotPhotos = dir.files('public/images/portfolio/portraits/headshots', {sync:true});
-var portSeniorPhotos = dir.files('public/images/portfolio/portraits/senior', {sync:true});
-var engagementPhotos = dir.files('public/images/portfolio/weddings/engagement', {sync:true});
-var weddingsPhotos = dir.files('public/images/portfolio/weddings/weddings', {sync:true});
+var babiesPhotos = removePublic(dir.files('public/images/portfolio/babiesfirstyear', {sync:true}));
+var portFamilyPhotos = removePublic(dir.files('public/images/portfolio/portraits/familyportraits', {sync:true}));
+var portHeadshotPhotos = removePublic(dir.files('public/images/portfolio/portraits/headshots', {sync:true}));
+var portSeniorPhotos = removePublic(dir.files('public/images/portfolio/portraits/senior', {sync:true}));
+var engagementPhotos = removePublic(dir.files('public/images/portfolio/weddings/engagement', {sync:true}));
+var weddingsPhotos = removePublic(dir.files('public/images/portfolio/weddings/weddings', {sync:true}));
 
+// Passes array of image locations and removes unecessary "public" 
+function removePublic(str) {
+    var correctDirectory = [];
+    for(i = 0; i < str.length; i++) {
+        correctDirectory[i] = str[i].substring(str[i].indexOf("images") - 1);
+    };
+    return correctDirectory;
+};
 
 module.exports = function(req, res) {
-    res.render('portfolio',  { title: 'Weddings Portfolio' })
+    res.render('portfolio',  { title: 'Portfolio' })
 };
 
 module.exports.weddingsEngage = function(req, res) {
-    res.render('portEngagement',  { di: engagementPhotos });
-};
+    res.render('portdisplay',  { di: engagementPhotos });
+}; 
 
 module.exports.weddings = function(req, res) {
-    res.render('index',  { title: 'Weddings Portfolio' })
+    res.render('portdisplay',  { di: weddingsPhotos })
 };
 
-module.exports.portraits = function(req, res) {
-    res.render('index',  { title: 'Portrait Portfolio' })
+module.exports.portraitsFamily = function(req, res) {
+    res.render('portdisplay',  { di: portFamilyPhotos })
+};
+
+module.exports.portraitsHead = function(req, res) {
+    res.render('portdisplay',  { di: portHeadshotPhotos })
+};
+
+module.exports.portraitsSenior = function(req, res) {
+    res.render('portdisplay',  { di: portSeniorPhotos })
 };
 
 module.exports.babies = function(req, res) {
-    res.render('index',  { title: 'Babies Portfolio' })
+    res.render('portdisplay',  { di: babiesPhotos })
 };
 
-console.log(engagementPhotos[2]);

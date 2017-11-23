@@ -5,7 +5,7 @@
   padding: 0px; }
 
 .navbar {
-  position: absolute; }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .headerSection {
   overflow: hidden;
