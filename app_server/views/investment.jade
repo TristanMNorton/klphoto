@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  each package in pricing
+    h3= package.title
+    h5= package.price
+    ul
+      each item in package.includes
+        li= item
+      
