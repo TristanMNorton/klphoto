@@ -4,36 +4,49 @@
 a {
   color: white; }
   a:hover {
-    color: white; }
+    color: #89114c; }
 
 .container-fluid {
   padding: 0px; }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.5); }
+  .navbar img {
+    width: 130px; }
 
-.headerSection {
-  overflow: hidden;
-  margin-bottom: 40px; }
-  .headerSection img {
-    width: 100%; }
+.headerSectionPort {
+  background-image: url("../images/headers/portraits.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.headerSectionHome {
+  background-image: url("../images/homepage/heroimage1.jpg");
+  background-size: cover;
+  background-position: center; }
 
 h1 {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: #89114c; }
 
-#navbarNav {
-  margin-top: -90px; }
-  #navbarNav li {
-    margin: 0 20px 0 20px;
-    font-size: 25px; }
+.headerSection {
+  overflow: hidden;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh; }
+
+#navbarNav li {
+  margin: 0 20px 0 20px;
+  font-size: 25px; }
 
 * {
   font-family: 'EB Garamond', serif; }
 
-.tempFill {
-  min-height: 100%;
-  height: 100%;
+.backgroundGlobal {
+  background-repeat: no-repeat; }
+
+.flexCommonDown {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,17 +58,19 @@ h1 {
   flex-direction: column;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: space-around; }
+
+.tempFill {
+  background-position: top -500px center;
+  min-height: 100%;
+  height: 100%;
   text-align: center;
   background-image: url("../images/tempconst/tempconstimagecomp.jpg");
-  backgroundsize: cover;
-  background-position: top -500px center;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(137, 17, 76, 0.5);
-  box-shadow: inset 0 0 0 1000px rgba(137, 17, 76, 0.5);
   margin: 0;
   width: 100%;
-  color: white; }
+  color: white;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(137, 17, 76, 0.8);
+  box-shadow: inset 0 0 0 1000px rgba(137, 17, 76, 0.8); }
   .tempFill i {
     font-size: 32px;
     margin: 0 10px 0 10px;
@@ -69,7 +84,8 @@ h1 {
     max-width: 350px;
     width: 100%; }
   .tempFill h1 {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    color: white-space; }
   .tempFill h4 {
     margin-bottom: 30px; }
 
