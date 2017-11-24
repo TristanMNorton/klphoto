@@ -22,6 +22,8 @@ router.get('/about/aboutus', ctrlAbout.aboutus);
 router.get('/about/contact', ctrlAbout.contact);
 
 /* GET investment pages */
-router.get('/investment', ctrlInvestment.investment);
+router.get('/investment/babies', ctrlInvestment.babyInvest);
+router.get('/investment/portraits', ctrlInvestment.portInvest);
+router.get('/investment/weddings', ctrlInvestment.wedInvest);
 
 module.exports = router;
