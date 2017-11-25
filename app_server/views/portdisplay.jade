@@ -1,6 +1,12 @@
 extends layout
 
+#portOverlay
 block content
-  h1= title
-  each engagementPhotos in di
-    img(src= engagementPhotos)
+  #portOverlay
+    img(src='')#portItemDisplay
+  .container-fluid.portContain
+    h1= title
+    .galleryFrame
+      each engagementPhotos in di
+        img(src= engagementPhotos).thumbImage
+  
