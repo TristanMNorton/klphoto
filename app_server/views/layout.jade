@@ -8,6 +8,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/main.css')
     link(href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
   body
     nav.navbar.navbar-expand-lg.navbar-light.fixed-top
       a.navbar-brand.navbar-left(href='#') 
@@ -31,9 +32,17 @@ html
       block content
 
       footer
-        .row
-          .col-xs-12
-            small &copy; Tristan Norton 2017
+        .container
+          .row
+            .col-lg-12
+              h2 &copy; K&L Photography 2017
+            .col-lg-12#socmedia
+              a(href="https://www.facebook.com/Theklphoto/")
+                i.fa.fa-facebook-official
+              a(href="https://www.instagram.com/theklphoto/")
+                i.fa.fa-instagram
+              a(href="mailto:contact@theklphoto.com")
+                i.fa.fa-envelope
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
     script(src='/bootstrap/js/bootstrap.min.js')
     script(src='/javascripts/galleryFunct.js')
