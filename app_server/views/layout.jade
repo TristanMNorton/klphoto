@@ -7,6 +7,7 @@ html
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/stylesheets/bouncingarrow.css')
     link(href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet")
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
   body
@@ -24,8 +25,16 @@ html
             a(href='#') About Us
           li.nav-item
             a(href='#') Portfolio
-          li.nav-item
-            a(href='#') Investments
+          li.nav-item.dropdown
+            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Investment
+            span.caret
+            ul.dropdown-menu
+              li
+                a(href="") Babies
+              li
+                a(href="") Portraits
+              li
+                a(href="") Weddings
 
 
     .container-fluid

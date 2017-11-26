@@ -1,8 +1,12 @@
 extends layout
 
 block content
-  .portContain.container
-    h1= title
+  .container-fluid.headerSection.headerSectionPort.backgroundGlobal
+    .pageTitle
+      .arrow.bounce
+        i.fa.fa-angle-down.fa-5x
+  h1= title
+  .container
     .row
       each package in pricing
           .col-lg-4.col-md-6.col-sm-12.priceItem

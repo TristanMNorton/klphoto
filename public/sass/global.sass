@@ -2,9 +2,17 @@
 
 *
     transition: .15s
+    text-decoration: none
 
 a
+    color: white
     text-decoration: none
+
+.nav-item
+    a
+        &:hover
+            text-decoration: none
+            color: rgb(137,17,76)
 
 .container-fluid 
    padding: 0px
@@ -33,10 +41,23 @@ a
     text-align: center
     margin-bottom: 50px
 
+    h5 
+        margin: 20px 0 20px 0
+
+    h2  
+        margin-top: 30px
+
+    a   
+        &:hover  
+            text-decoration: none
+
+
+
 h1
     text-align: center
     color: rgb(137, 17, 76)
     padding: 0
+    margin-bottom: 30px
 
 h3, h5
     color: rgb(137, 17, 76)
@@ -48,6 +69,12 @@ h7
 .priceItem
     margin-bottom: 30px
 
+.portThumbOverlay
+    position: absolute
+    background-color: black
+    width: 100%
+    height: 100%
+
 .headerSection
     overflow: hidden
     margin: 0
@@ -55,12 +82,22 @@ h7
     width: 100%
     height: 100vh
     margin-bottom: 40px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    .pageTitle
+        margin-bottom: 50px
+        color: white   
+        i  
+            font-size: 48px
 
 li span 
     color: rgb(125,130,133)
 
 .portContain
     margin-top: 156px
+    min-height: 700px
     
     ul   
         padding-left: 15px
@@ -102,10 +139,20 @@ li span
         column-count: 1
 
 #navbarNav
-
     li
         margin: 15px 
         font-size: 25px
+
+.dropdown-menu    
+    background-color: rgb(137, 17, 76)
+    border: none
+    border-radius: 0
+    mix-blend-mode: exclusion
+    text-align: center
+    li  
+        a  
+            &:hover
+                color: rgba(255,255,255,.5)
 
 *
     font-family: 'EB Garamond', serif

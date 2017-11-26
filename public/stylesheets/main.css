@@ -4,10 +4,16 @@
 * {
   -webkit-transition: .15s;
   -o-transition: .15s;
-  transition: .15s; }
+  transition: .15s;
+  text-decoration: none; }
 
 a {
+  color: white;
   text-decoration: none; }
+
+.nav-item a:hover {
+  text-decoration: none;
+  color: #89114c; }
 
 .container-fluid {
   padding: 0px; }
@@ -34,11 +40,18 @@ a {
 .portLinks {
   text-align: center;
   margin-bottom: 50px; }
+  .portLinks h5 {
+    margin: 20px 0 20px 0; }
+  .portLinks h2 {
+    margin-top: 30px; }
+  .portLinks a:hover {
+    text-decoration: none; }
 
 h1 {
   text-align: center;
   color: #89114c;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 30px; }
 
 h3, h5 {
   color: #89114c; }
@@ -50,19 +63,44 @@ h7 {
 .priceItem {
   margin-bottom: 30px; }
 
+.portThumbOverlay {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%; }
+
 .headerSection {
   overflow: hidden;
   margin: 0;
   text-align: center;
   width: 100%;
   height: 100vh;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .headerSection .pageTitle {
+    margin-bottom: 50px;
+    color: white; }
+    .headerSection .pageTitle i {
+      font-size: 48px; }
 
 li span {
   color: #7d8285; }
 
 .portContain {
-  margin-top: 156px; }
+  margin-top: 156px;
+  min-height: 700px; }
   .portContain ul {
     padding-left: 15px;
     margin-bottom: 5px; }
@@ -122,6 +160,15 @@ li span {
 #navbarNav li {
   margin: 15px;
   font-size: 25px; }
+
+.dropdown-menu {
+  background-color: #89114c;
+  border: none;
+  border-radius: 0;
+  mix-blend-mode: exclusion;
+  text-align: center; }
+  .dropdown-menu li a:hover {
+    color: rgba(255, 255, 255, 0.5); }
 
 * {
   font-family: 'EB Garamond', serif; }

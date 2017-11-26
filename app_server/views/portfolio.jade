@@ -1,13 +1,31 @@
 extends layout
 
 block content
-  .container-fluid.headerSection.headerSectionPort.backgroundGlobal.flexCommonDown
-  h1.col-lg-12.col-md-12.col-sm-12.col-xs-12 Portfolio
+  .container-fluid.headerSection.headerSectionPort.backgroundGlobal
+    .pageTitle
+      .arrow.bounce
+        i.fa.fa-angle-down.fa-5x
+  h1.col-lg-12 Portfolio
   .container
     .row
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/babyportthumb.jpg').img-fluid
+        h2 Babies
+        a(href='')
+          h5 Baby's First Year
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/portportthumb.jpg').img-fluid
+        h2 Portraits
+        a(href='')
+          h5 Senior Portraits
+        a(href='')
+          h5 Family Portraits
+        a(href='')
+          h5 Headshots
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/wedportthumb.jpg').img-fluid
+        h2 Weddings 
+        a(href='')
+          h5 Engagement
+        a(href='')
+          h5 Matrimony 
