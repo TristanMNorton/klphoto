@@ -11,6 +11,57 @@ a {
   color: white;
   text-decoration: none; }
 
+form {
+  max-width: 500px;
+  text-align: left;
+  display: block;
+  font-size: 20px;
+  margin: auto; }
+  form h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 5px; }
+  form label {
+    margin-bottom: 2px; }
+  form input, form select, form textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    margin-bottom: 10px;
+    outline: 0; }
+  form select {
+    color: white; }
+    form select option {
+      color: black; }
+  form button {
+    background: none;
+    border: none;
+    color: white;
+    padding-left: 0;
+    font-weight: bolder;
+    font-size: 24px; }
+
+#aboutUs {
+  padding: 0 40px 0 40px;
+  text-align: center; }
+  #aboutUs .row {
+    margin-bottom: 40px; }
+    #aboutUs .row p {
+      padding: 0 10px 0 10px; }
+  #aboutUs img {
+    border-radius: 50%;
+    margin: 20px 0 30px 0;
+    max-width: 300px; }
+  #aboutUs h1 {
+    margin-top: 20px; }
+    #aboutUs h1:nth-child(even) {
+      margin-top: 40px; }
+  #aboutUs h2 {
+    color: #89114c; }
+  #aboutUs p {
+    font-size: 18px;
+    text-align: left; }
+
 .nav-item a:hover {
   text-decoration: none;
   color: #89114c; }
@@ -160,6 +211,9 @@ li span {
 #navbarNav li {
   margin: 15px;
   font-size: 25px; }
+
+.dropdown {
+  margin: 0; }
 
 .dropdown-menu {
   background-color: #89114c;

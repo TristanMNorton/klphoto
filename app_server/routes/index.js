@@ -18,8 +18,7 @@ router.get('/portfolio/portraits/senior', ctrlPortfolio.portraitsSenior);
 router.get('/portfolio/babies', ctrlPortfolio.babies);
 
 /* GET about pages */
-router.get('/about/aboutus', ctrlAbout.aboutus);
-router.get('/about/contact', ctrlAbout.contact);
+router.get('/aboutus', ctrlAbout.aboutus);
 
 /* GET investment pages */
 router.get('/investment/babies', ctrlInvestment.babyInvest);
