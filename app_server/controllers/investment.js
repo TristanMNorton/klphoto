@@ -2,7 +2,7 @@
 
 var weddings = {
         toHave: {
-            price: '$2500*',
+            price: '$2500',
             includes: [
                 'Consultation with photographers',
                 '6 hours of coverage',
@@ -46,11 +46,11 @@ var weddings = {
 
 
 module.exports.babyInvest = function(req, res) {
-    res.render('investment',  { 
+    res.render('investmentbaby',  { 
         title: 'Baby\'s First Year Packages', 
         pricing: [{
             title:'BUN IN THE OVEN', 
-            price: '$350 (+$50/extra hour)*',
+            price: '$350 (+$50/extra hour)',
             includes: [
                 'Up to 2 hours',
                 'Multiple locations/outfit changes',
@@ -77,7 +77,7 @@ module.exports.babyInvest = function(req, res) {
             },
             {
             title:'I\'m "ONE-DERFUL"', 
-            price: '$350 (+$50/extra hour)*',
+            price: '$350 (+$50/extra hour)',
             includes: [
                 'Up to 4 hours',
                 'Multiple outfits, cake smash, family portraits',
@@ -89,7 +89,7 @@ module.exports.babyInvest = function(req, res) {
         },
         {
             title:'BUNDLE OF JOY', 
-            price: '$900*',
+            price: '$900',
             includes: [
                 'Maternity "Bun in the Oven" session',
                 'Newborn "Welcome Home, Baby!" session',
@@ -103,12 +103,12 @@ module.exports.babyInvest = function(req, res) {
 };
 
 module.exports.portInvest = function(req, res) {
-    res.render('investment',  { 
+    res.render('investmentportrait',  { 
         title: 'Portrait Packages', 
         pricing: [
             {
                 title: 'SENIOR PORTRAITS & HEADSHOTS',
-                price: '$300 (+$50/extra hour)*',
+                price: '$300 (+$50/extra hour)',
                 includes: [
                     '1 hour',
                     'Up to 25 images',
@@ -134,7 +134,7 @@ module.exports.portInvest = function(req, res) {
             },
             {
                 title: 'ENGAGEMENT',
-                price: '$450 (+$50/extra hour)*',
+                price: '$450 (+$50/extra hour)',
                 includes: [
                     'Up to 3 hours',
                     'Multiple locations/outfit changes',
@@ -152,12 +152,12 @@ module.exports.portInvest = function(req, res) {
 };
 
 module.exports.wedInvest = function(req, res) {
-    res.render('investment',  { 
+    res.render('investmentwed',  { 
         title: 'Wedding Packages', 
         pricing: [
             {
                 title: 'TO HAVE AND TO HOLD',
-                price: '$2500*',
+                price: '$2500',
                 includes: [
                     'Consultation with photographers',
                     '6 hours of coverage',
@@ -171,7 +171,7 @@ module.exports.wedInvest = function(req, res) {
             },
             {
                 title: 'FOR BETTER, FOR WORSE',
-                price: '$3200*',
+                price: '$3200',
                 includes: [
                     'Consultation with photographers',
                     '8 hours of coverage',
@@ -185,7 +185,7 @@ module.exports.wedInvest = function(req, res) {
             },
             {
                 title: 'TIL DEATH DO US PART',
-                price: '$4000*',
+                price: '$4000',
                 includes: [
                     'Consultation with photographers',
                     '10 hours of coverage',

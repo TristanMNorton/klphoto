@@ -11,6 +11,9 @@ a {
   color: white;
   text-decoration: none; }
 
+.navFix {
+  margin-top: 196px; }
+
 form {
   max-width: 500px;
   text-align: left;
@@ -28,7 +31,8 @@ form {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     margin-bottom: 10px;
-    outline: 0; }
+    outline: 0;
+    color: white; }
   form select {
     color: white; }
     form select option {
@@ -70,7 +74,7 @@ form {
   padding: 0px; }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
   width: 100%; }
 
 .navbar-brand {
@@ -79,12 +83,27 @@ form {
     width: 130px; }
 
 .headerSectionPort {
-  background-image: url("../images/headers/portraits.jpg");
+  background-image: url("../images/headers/portfolio.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.headerSectionInvestBaby {
+  background-image: url("../images/headers/investbabyhero.jpg");
+  background-size: cover;
+  background-position: 70%; }
+
+.headerSectionInvestWed {
+  background-image: url("../images/headers/investwedhero.jpg");
+  background-size: cover;
+  background-position: 15%; }
+
+.headerSectionInvestPort {
+  background-image: url("../images/headers/investporthero.jpg");
   background-size: cover;
   background-position: center; }
 
 .headerSectionHome {
-  background-image: url("../images/homepage/heroimage1.jpg");
+  background-image: url("../images/headers/homepage.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -141,7 +160,6 @@ h7 {
   -ms-flex-pack: end;
   justify-content: flex-end; }
   .headerSection .pageTitle {
-    margin-bottom: 50px;
     color: white; }
     .headerSection .pageTitle i {
       font-size: 48px; }
@@ -221,8 +239,10 @@ li span {
   border-radius: 0;
   mix-blend-mode: exclusion;
   text-align: center; }
-  .dropdown-menu li a:hover {
-    color: rgba(255, 255, 255, 0.5); }
+  .dropdown-menu li a {
+    font-size: 20px; }
+    .dropdown-menu li a:hover {
+      color: rgba(255, 255, 255, 0.5); }
 
 * {
   font-family: 'EB Garamond', serif; }
@@ -240,9 +260,16 @@ li span {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  opacity: 1; }
+
+#scroll {
+  color: white;
+  margin-bottom: 80px;
+  text-shadow: 1px 1px 2px black; }
 
 #portOverlay {
   margin-top: -156px;

@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
     script( language="JavaScript" type="text/javascript" src='/javascripts/jquery-3.2.1.js')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
@@ -12,7 +13,7 @@ html
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
   body
     nav.navbar.navbar-expand-lg.navbar-light.fixed-top
-      a.navbar-brand.navbar-left(href='#') 
+      a.navbar-brand.navbar-left(href='/') 
         img(src="/images/tempconst/logo.png")
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -22,21 +23,21 @@ html
             a.nav-link(href='#')
               span.sr-only (current)
           li.nav-item
-            a(href='#') About Us
+            a(href='/aboutus') About Us
           li.nav-item
-            a(href='#') Portfolio
-          li.nav-item
-            a(href='#')#contactLink Contact
+            a(href='/portfolio') Portfolio
           li.nav-item.dropdown
             a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Investment
             span.caret
             ul.dropdown-menu
               li
-                a(href="") Babies
+                a(href="/investment/babies") Baby's First Year
               li
-                a(href="") Portraits
+                a(href="/investment/portraits") Portraits
               li
-                a(href="") Weddings
+                a(href="/investment/weddings") Weddings
+          li.nav-item
+            a(href='#')#contactLink Contact
 
 
     .container-fluid
@@ -47,7 +48,8 @@ html
 
           form(action="https://formspree.io/contact@theklphoto.com"
       method="POST")
-            h1 Contact Us
+            h1 Let's Get Things Started
+            input(type="hidden" name="_subject" value="Contact Form Submission")
             label(for='myName') Name 
             input(type='text' name='name' id='myName')
             label(for='email') Email
@@ -72,7 +74,6 @@ html
                 i.fa.fa-envelope
             .col-lg-12
               h2 &copy; K&L Photography 2017
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
     script(src='/bootstrap/js/bootstrap.min.js')
     script(src='/javascripts/variousfrontend.js')
   

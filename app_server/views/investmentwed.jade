@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container-fluid.headerSection.headerSectionInvestWed.backgroundGlobal
+    h1#scroll See More
+    .pageTitle
+      .arrow.bounce
+        i.fa.fa-angle-down.fa-5x
+  h1= title
+  .container
+    .row
+      each package in pricing
+          .col-lg-4.col-md-6.col-sm-12.priceItem
+            h3= package.title
+            h5= package.price
+            ul
+              each item in package.includes
+                li
+                  span= item
+        

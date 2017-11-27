@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  .container-fluid.headerSection.headerSectionPort.backgroundGlobal
+  .container-fluid.headerSection.headerSectionPort
+    h1#scroll See More
     .pageTitle
       .arrow.bounce
         i.fa.fa-angle-down.fa-5x
@@ -11,21 +12,21 @@ block content
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/babyportthumb.jpg').img-fluid
         h2 Babies
-        a(href='')
+        a(href='/portfolio/babies')
           h5 Baby's First Year
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/portportthumb.jpg').img-fluid
         h2 Portraits
-        a(href='')
-          h5 Senior Portraits
-        a(href='')
+        a(href='/portfolio/portraits/family')
           h5 Family Portraits
-        a(href='')
+        a(href='/portfolio/portraits/senior')
+          h5 Senior Portraits
+        a(href='/portfolio/portraits/headshots')
           h5 Headshots
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/wedportthumb.jpg').img-fluid
         h2 Weddings 
-        a(href='')
+        a(href='/portfolio/weddings/engagements')
           h5 Engagement
-        a(href='')
-          h5 Matrimony 
+        a(href='/portfolio/weddings/weddings')
+          h5 Weddings

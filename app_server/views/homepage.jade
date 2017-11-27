@@ -2,8 +2,9 @@ extends layout
 
 block content
   .headerContainer.backgroundGlobal.headerSection.headerSectionHome.flexCommonDown
+    h1#scroll See More
   .container#aboutUs 
-    h1 ABOUT K&L PHOTO
+    h1 ABOUT K&L PHOTOGRAPHY
     p Hi! We're K&L Photography. To know the full story of where we started, you have to go back about 20 years, to Mrs. White's classroom, where two little girls got in trouble for distracting each other, first becoming best friends. Over the years, those same girls developed a similar passion for photography, and K&L Photography was born. K&L Photography is a result of years of laughter, support and true friendship, and we carry those things in to our work as well. Laughing and creating memories with each other is one of our favorite things, and we love being able to capture those special memories for newlyweds and families. The full belly laughs, the secret shared glances, and all of the candid moments you didn't even know were happening, are what make what we do so rewarding.
     p We don't see you as our client, but as our friend. After the first few shots, you'll forget the cameras are even there. We want to smile with you, hear your stories, and really get to know you. Being on location with us, you'll really get to see just how much our friendship has molded how we work together. We (quite often) finish each other sentences, know what the other person is doing before they even do it, and show our excitement when something's just right. When you hear a collective scream of excitement from both of us, you know we've hit gold. Now that you know a little about us, let's start a new friendship.
     h1 ABOUT THE PHOTOGRAPHERS
@@ -16,7 +17,7 @@ block content
             img(src='/images/headshots/headshotkaylie.jpg')
             h2 Kaylie Goodwin
             p Photography for me came about back when I was in high school. I signed up for the black and white film class originally because it was a rumored “easy A” yet I never knew that it would morph into my passion and end up being my career. From there I went on to study photography in college at the New England School of Photography in Boston where I specialized in Creative Imaging, Portraiture, and Advertising. NESOP didn’t just teach me about the fundamentals of photography and interacting with my clients, but helped me find myself as an artist and helped form my vision. If I’m not photographing you can catch me cuddling on the couch with my cat and binging Netflix or at an all you can eat taco buffet. Working with my best friend has been pretty much everything you could imagine, long nights of editing with takeout sushi sprawled on the counter, and early morning coffee dates before a photo shoot are some of my favorite parts. In short, I’m glad photography ended up being much more than just an “easy A.”
-  .container-fluid.headerSection.headerSectionPort.backgroundGlobal
+  .container-fluid.headerSection.headerSectionPort
     .pageTitle
       .arrow.bounce
         i.fa.fa-angle-down.fa-5x
@@ -26,21 +27,21 @@ block content
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/babyportthumb.jpg').img-fluid
         h2 Babies
-        a(href='')
+        a(href='/portfolio/babies')
           h5 Baby's First Year
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/portportthumb.jpg').img-fluid
         h2 Portraits
-        a(href='')
-          h5 Senior Portraits
-        a(href='')
+        a(href='/portfolio/portraits/family')
           h5 Family Portraits
-        a(href='')
+        a(href='/portfolio/portraits/senior')
+          h5 Senior Portraits
+        a(href='/portfolio/portraits/headshots')
           h5 Headshots
       .col-lg-4.col-sm-6.portLinks
         img(src='/images/portfolio/wedportthumb.jpg').img-fluid
         h2 Weddings 
-        a(href='')
+        a(href='/portfolio/weddings/engagements')
           h5 Engagement
-        a(href='')
-          h5 Matrimony 
+        a(href='/portfolio/weddings/weddings')
+          h5 Weddings 

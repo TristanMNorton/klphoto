@@ -8,6 +8,9 @@ a
     color: white
     text-decoration: none
 
+.navFix
+    margin-top: 196px
+
 form 
     max-width: 500px
     text-align: left 
@@ -29,6 +32,7 @@ form
         border: none
         margin-bottom: 10px
         outline: 0
+        color: white
     
     select 
         color: white
@@ -85,7 +89,7 @@ form
    padding: 0px
     
 .navbar
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.35)
     width: 100%
 
 .navbar-brand
@@ -95,12 +99,27 @@ form
         width: 130px
 
 .headerSectionPort
-    background-image: url('../images/headers/portraits.jpg')
+    background-image: url('../images/headers/portfolio.jpg')
+    background-size: cover
+    background-position: center
+
+.headerSectionInvestBaby
+    background-image: url('../images/headers/investbabyhero.jpg')
+    background-size: cover
+    background-position: 70%
+
+.headerSectionInvestWed
+    background-image: url('../images/headers/investwedhero.jpg')
+    background-size: cover
+    background-position: 15% 
+
+.headerSectionInvestPort
+    background-image: url('../images/headers/investporthero.jpg')
     background-size: cover
     background-position: center
 
 .headerSectionHome
-    background-image: url('../images/homepage/heroimage1.jpg')
+    background-image: url('../images/headers/homepage.jpg')
     background-size: cover
     background-position: center
 
@@ -154,7 +173,6 @@ h7
     justify-content: flex-end
 
     .pageTitle
-        margin-bottom: 50px
         color: white   
         i  
             font-size: 48px
@@ -213,7 +231,7 @@ li span
 .dropdown
     margin: 0
 
-.dropdown-menu    
+.dropdown-menu  
     background-color: rgb(137, 17, 76)
     border: none
     border-radius: 0
@@ -221,6 +239,7 @@ li span
     text-align: center
     li  
         a  
+            font-size: 20px  
             &:hover
                 color: rgba(255,255,255,.5)
 
@@ -233,7 +252,13 @@ li span
 .flexCommonDown  
     display: flex
     flex-direction: column
-    justify-content: space-around
+    justify-content: flex-end
+    opacity: 1
+    
+#scroll 
+    color: white
+    margin-bottom: 80px
+    text-shadow: 1px 1px 2px black
 
 #portOverlay 
     margin-top: -156px

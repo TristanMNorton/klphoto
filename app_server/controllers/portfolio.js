@@ -59,7 +59,7 @@ module.exports.portraitsSenior = function(req, res) {
 module.exports.babies = function(req, res) {
     res.render('portdisplay',  { 
         di: babiesPhotos, 
-        title: 'Babies First Year' 
+        title: 'Baby\'s First Year' 
     });
 };
 

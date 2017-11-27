@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  .container-fluid.headerSection.headerSectionPort.backgroundGlobal
+  .container-fluid.headerSection.headerSectionInvestPort.backgroundGlobal
+    h1#scroll See More
     .pageTitle
       .arrow.bounce
         i.fa.fa-angle-down.fa-5x
@@ -16,5 +17,4 @@ block content
               each item in package.includes
                 li
                   span= item
-            h7= package.bonus
         
