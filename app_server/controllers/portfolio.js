@@ -1,5 +1,6 @@
 var dir = require('node-dir');
 
+
 // Scanning directories to return image file names to be used in DOM
 var babiesPhotos = removePublic(dir.files('public/images/portfolio/babiesfirstyear', {sync:true}));
 var portFamilyPhotos = removePublic(dir.files('public/images/portfolio/portraits/familyportraits', {sync:true}));
