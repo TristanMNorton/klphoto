@@ -1,6 +1,3 @@
-.homepageImg {
-  width: 100%; }
-
 * {
   -webkit-transition: .15s;
   -o-transition: .15s;
@@ -10,6 +7,22 @@
 a {
   color: white;
   text-decoration: none; }
+
+.buttonBurgandy {
+  background: none;
+  color: #89114c;
+  border: 3px #89114c solid;
+  padding: 10px 20px;
+  margin-bottom: 7%;
+  font-size: 200%;
+  cursor: pointer;
+  outline: 0; }
+  .buttonBurgandy:hover {
+    color: white;
+    background-color: #89114c;
+    -webkit-transition-duration: .125s;
+    -o-transition-duration: .125s;
+    transition-duration: .125s; }
 
 .navFix {
   margin-top: 196px; }
@@ -147,16 +160,13 @@ h7 {
   height: 100vh;
   margin-bottom: 40px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
   .headerSection .pageTitle {
@@ -185,10 +195,8 @@ li span {
   max-width: 1150px;
   line-height: 0;
   -webkit-column-count: 4;
-  -moz-column-count: 4;
   column-count: 4;
   -webkit-column-gap: 0px;
-  -moz-column-gap: 0px;
   column-gap: 0px;
   margin-bottom: 50px; }
   .galleryFrame img {
@@ -208,22 +216,18 @@ li span {
   @media screen and (max-width: 1200px) {
     .galleryFrame {
       -webkit-column-count: 4;
-      -moz-column-count: 4;
       column-count: 4; } }
   @media screen and (max-width: 1000px) {
     .galleryFrame {
       -webkit-column-count: 3;
-      -moz-column-count: 3;
       column-count: 3; } }
   @media screen and (max-width: 800px) {
     .galleryFrame {
       -webkit-column-count: 2;
-      -moz-column-count: 2;
       column-count: 2; } }
   @media screen and (max-width: 400px) {
     .galleryFrame {
       -webkit-column-count: 1;
-      -moz-column-count: 1;
       column-count: 1; } }
 
 #navbarNav li {
@@ -252,16 +256,13 @@ li span {
 
 .flexCommonDown {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   opacity: 1; }
@@ -276,10 +277,8 @@ li span {
   visibility: hidden;
   position: fixed;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
@@ -291,7 +290,6 @@ li span {
   -o-transition: .25s;
   transition: .25s; }
   #portOverlay img {
-    -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center; }
 

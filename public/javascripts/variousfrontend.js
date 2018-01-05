@@ -22,7 +22,7 @@ $('document').ready(function() {
       });
 
     //Contact Form
-      $("#contactLink").click(function() {
+      $("#contactLink, .buttonBurgandy").click(function() {
         $('html, body').animate({
             scrollTop: $("form").offset().top
         }, 500);
