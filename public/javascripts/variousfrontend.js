@@ -3,12 +3,13 @@ $('document').ready(function() {
     //portfolio functionality 
     $('.thumbImage').click(function() {
         var thumbAtt = $(this).attr('src');
+        console.log(thumbAtt);
         $('#portOverlay').css('visibility', 'visible');
         $('#portOverlay').css('opacity', '1');
         $('#portItemDisplay').attr('src', thumbAtt);
     }); 
 
-    $('#portOverlay').click(function() {
+    $('#portItemDisplay').click(function() {
         $('#portOverlay').css('visibility', 'hidden');
         $('#portOverlay').css('opacity', '0');
         $('#portItemDisplay').attr('src', '');
@@ -27,4 +28,6 @@ $('document').ready(function() {
             scrollTop: $("form").offset().top
         }, 500);
     });
+
+
 });

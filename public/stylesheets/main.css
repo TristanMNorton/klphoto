@@ -267,6 +267,21 @@ li span {
   justify-content: flex-end;
   opacity: 1; }
 
+.flexCommonAcross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 1;
+  max-width: 600px;
+  margin: 0 auto; }
+
 #scroll {
   color: white;
   margin-bottom: 80px;
@@ -279,8 +294,13 @@ li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -289,9 +309,21 @@ li span {
   -webkit-transition: .25s;
   -o-transition: .25s;
   transition: .25s; }
-  #portOverlay img {
+  #portOverlay img, #portOverlay i {
     -ms-flex-item-align: center;
-    align-self: center; }
+    align-self: center;
+    cursor: pointer; }
+  #portOverlay i {
+    font-size: 200%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px; }
+    #portOverlay i:first-of-type {
+      padding-right: 20px; }
+    #portOverlay i:last-of-type {
+      padding-left: 20px; }
 
 .tempFill {
   background-position: top -500px center;
