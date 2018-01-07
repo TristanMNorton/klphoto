@@ -22,13 +22,13 @@ $('document').ready(function(){
         var isolatedPath = currImageSrc.substring(0, currImageSrc.lastIndexOf("\\") + 1);
         var isolatedFile = currImageSrc.substring(currImageSrc.lastIndexOf("\\") + 1, currImageSrc.length);
         var finalFile = isolatedFile;
-        console.log('click');
 
         //finds unique identifier to determine left or right
         for (i = 0; i < imgClasses.length; i++) { 
 
             //if left cycle backwards, includes conditional to determine if current image is the first one
             if (imgClasses[i] === 'fa-chevron-left') {
+                console.log('click');
                 for(i = 0; i < containedImageNames.length; i++) {
                     if (containedImageNames[i] === finalFile) {
                         if (i === 0) {
