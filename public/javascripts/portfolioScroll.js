@@ -22,6 +22,7 @@ $('document').ready(function(){
         var isolatedPath = currImageSrc.substring(0, currImageSrc.lastIndexOf("\\") + 1);
         var isolatedFile = currImageSrc.substring(currImageSrc.lastIndexOf("\\") + 1, currImageSrc.length);
         var finalFile = isolatedFile;
+        console.log('click');
 
         //finds unique identifier to determine left or right
         for (i = 0; i < imgClasses.length; i++) { 
