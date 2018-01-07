@@ -39,6 +39,7 @@ $('document').ready(function(){
                             incr = i - 1;
                         }
                         var fileName = containedImageNames[incr];
+                        console.log(fileName);
                         var finalFilePath = isolatedPath + fileName;
                         $('#portItemDisplay').attr('src', finalFilePath);
                     } 
