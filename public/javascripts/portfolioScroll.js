@@ -12,6 +12,7 @@ $('document').ready(function(){
         );
      };
     
+    console.log(containedImageNames);
     // declares image count with an index of 0 to be properly referenced in conditionals
     var imgNumber = containedImageNames.length - 1;
    
