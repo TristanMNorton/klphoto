@@ -1,5 +1,12 @@
 $('document').ready(function() {
-
+    var curURL = window.location.href.split('/');
+    var lastPath = curURL[curURL.length - 1];
+    
+    if (lastPath === 'contact') {
+        $('html, body').animate({
+            scrollTop: $("form").offset().top
+        }, 500);
+    };
     //portfolio functionality 
     $('.thumbImage').click(function() {
         var thumbAtt = $(this).attr('src');

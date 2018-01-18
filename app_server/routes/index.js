@@ -7,6 +7,7 @@ var ctrlInvestment = require('../controllers/investment');
 
 /* GET home page. */
 router.get('/', ctrlMain.index);
+router.get('/contact', ctrlMain.index);
 
 /* GET portfolio pages */
 router.get('/portfolio', ctrlPortfolio)
