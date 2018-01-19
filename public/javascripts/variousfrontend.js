@@ -3,9 +3,7 @@ $('document').ready(function() {
     var lastPath = curURL[curURL.length - 1];
     
     if (lastPath === 'contact') {
-        $('html, body').animate({
-            scrollTop: $("form").offset().top
-        }, 500);
+        window.scrollTo(0,document.body.scrollHeight);
     };
     //portfolio functionality 
     $('.thumbImage').click(function() {
